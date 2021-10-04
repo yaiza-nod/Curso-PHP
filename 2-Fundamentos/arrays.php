@@ -1,5 +1,7 @@
 <?php
 
+// ARRAYS INDEXADOS
+
     // Dos formas de crear arrays:
 
     $semana = array('Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo');
