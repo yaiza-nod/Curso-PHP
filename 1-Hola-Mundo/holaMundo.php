@@ -24,7 +24,7 @@ comentario
 </head>
 <body>
 
-<h1><?php echo("Hola Mundo!! Soy un H1!! :)"); ?></h1>
+    <h1><?php echo("Hola Mundo!! Soy un H1!! :)"); ?></h1>
     
 </body>
 </html>
