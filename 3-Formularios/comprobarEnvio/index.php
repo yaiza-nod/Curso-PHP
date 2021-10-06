@@ -11,7 +11,7 @@
         <input type="text" name="nombre" placeholder="nombre">
         <input type="email" name="correo" placeholder="correo">
 
-        <input type="submit" value="Enviar">
+        <input type="submit" name="submit" value="Enviar">
     </form>
 </body>
 </html>

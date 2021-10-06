@@ -39,7 +39,7 @@
         <input type="checkbox" name="terminos" id="terminos" value="ok">
         </br>
         <br/>
-        <input type="submit" value="Enviar">
+        <input type="submit" name="submit" value="Enviar">
 
     </form>
     
