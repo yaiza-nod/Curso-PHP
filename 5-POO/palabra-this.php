@@ -8,23 +8,24 @@ class Persona {
 
     public function mostrarInfo() {
 
-        echo 'Hola mundo!!';
+        echo $this->nombre.' tiene '.$this->edad.' años y nació en '.$this->pais.'.';
     }
 
 }
 
-$yaiza = new Persona; // CREO UNA PERSONA
-
+$yaiza = new Persona;
 $yaiza->nombre = 'Yaiza';
-$yaiza->edad = 22;
+$yaiza->edad = 23;
 $yaiza->pais = 'España';
 
-$alvaro = new Persona; // CREO OTRA PERSONA
+$yaiza->mostrarInfo();
 
+echo '<br/>';
+
+$alvaro = new Persona;
 $alvaro->nombre = 'Alvaro';
 $alvaro->edad = 23;
 $alvaro->pais = 'España';
 
-//$yaiza->mostrarInfo(); ACCEDO A UNA FUNCIÓN
 
-echo $yaiza->nombre.' tiene '.$yaiza->edad.' años.';
+$alvaro->mostrarInfo();
