@@ -20,8 +20,8 @@ class PersonaConst {
 
 }
 
-$yaiza = new Persona('Yaiza', 23, 'España');
+$yaiza = new PersonaConst('Yaiza', 23, 'España');
 $yaiza->mostrarInfo();
 
-$alvaro = new Persona('Alvaro', 23, 'España');
+$alvaro = new PersonaConst('Alvaro', 23, 'España');
 $alvaro->mostrarInfo();
