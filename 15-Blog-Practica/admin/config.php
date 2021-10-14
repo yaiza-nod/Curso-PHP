@@ -9,6 +9,11 @@ $bd_config = array (
 );
 
 $blog_config = array (
-    'post_pag' => '2',
-    'carpeta_imagenes' => 'imagenes/'
+    'postPag' => '2',
+    'carpetaImagenes' => 'imagenes/'
+);
+
+$blog_admin = array (
+    'usuario' => 'Yaiza',
+    'password' => '123'
 );

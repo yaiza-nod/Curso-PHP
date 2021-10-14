@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,33 +14,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="<?php echo RUTA; ?>css/estilo.css">
 </head>
-<body>
-    <?php require 'views/header.php';?>
-    <div class="contenedor">
-        
-        <?php foreach($posts as $post): ?>
-            <div class="post">
-                <article>
-                    <a href="single.php?id=<?php echo $post['id'] ?>"><h2 class="titulo"><?php echo $post['titulo']; ?></h2></a>
-                    <p class="fecha"><?php echo fecha($post['fecha']) ?></p>
-                    <div class="thumb">
-                        <a href="single.php?id=<?php echo $post['id'] ?>">
-                            <img src="<?php echo RUTA; ?>/imagenes/<?php echo $post['thumb'] ?>" alt="">
-                        </a>
-                    </div>
-                    <p class="extracto"><?php echo $post['extracto'] ?></p>
-                    <a href="single.php?id=<?php echo $post['id'] ?>" class="continuar">Continuar Leyendo</a>
-                </article>
-            </div>
-        <?php endforeach; ?>
 
-        <?php require 'paginacion.php' ;?>
+<body>
+
+    <?php require 'views/header.php'; ?>
+
+    <div class="contenedor">
+
+        <div class="post">
+            <article>
+                <h2 class="titulo"><?php echo $post['titulo']; ?></h2>
+                <p class="fecha"><?php echo fecha($post['fecha']); ?></p>
+                <div class="thumb">
+                    <img src="<?php echo RUTA; ?>/imagenes/<?php echo $post['thumb']; ?>" alt="<?php echo $post['titulo']; ?>">
+                </div>
+                <p class="extracto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore omnis porro aliquam optio officiis
+                    voluptatem doloribus fuga quis quaerat modi enim, obcaecati error corporis eius quod quisquam
+                    necessitatibus aliquid repudiandae, temporibus, molestiae qui ducimus. Suscipit assumenda quis
+                    aspernatur corporis accusamus cumque veritatis ab aliquam? Accusantium delectus nam autem porro
+                    deleniti!
+                </p>
+            </article>
+        </div>
+
     </div>
 
     <?php require 'views/footer.php'; ?>
 
 </body>
+
 </html>
