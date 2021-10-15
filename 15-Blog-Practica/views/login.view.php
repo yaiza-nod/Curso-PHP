@@ -20,24 +20,22 @@
 
 <body>
 
-    <?php require 'views/header.php'; ?>
+    <?php require 'header.php'; ?>
 
-    <div class="contenedor">
-
-        <div class="post">
-            <article>
-                <h2 class="titulo"><?php echo $post['titulo']; ?></h2>
-                <p class="fecha"><?php echo fecha($post['fecha']); ?></p>
-                <div class="thumb">
-                    <img src="<?php echo RUTA; ?>/imagenes/<?php echo $post['thumb']; ?>" alt="<?php echo $post['titulo']; ?>">
-                </div>
-                <p class="extracto"><?php echo nl2br($post['texto']);?></p>
-            </article>
+        <div class="contenedor">
+            <div class="post">
+                <article>
+                    <h2 class="titulo">Iniciar Sesión</h2>
+                    <form class="formulario" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+                        <input type="text" name="usuario" placeholder="Usuario">
+                        <input type="password" name="password" placeholder="Contraseña">
+                        <input type="submit" value="Iniciar Sesión">
+                    </form>
+                </article>
+            </div>
         </div>
 
-    </div>
-
-    <?php require 'views/footer.php'; ?>
+    <?php require 'footer.php'; ?>
 
 </body>
 

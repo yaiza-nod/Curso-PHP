@@ -73,4 +73,23 @@ error_reporting(E_STRICT); // Muestra el tipo de error que quiero, en este caso 
         return $fecha;
     }
 
+// Obtengo el número de páginas:
+
+    function numeroPaginas($postPag, $conexion) {
+
+        $totalPosts = $conexion->prepare('SELECT FOUND_ROWS() AS total'); // aqui llamo al calculo que he hecho en funcion obtener post (sql_calc_found_rows)
+        $totalPosts->execute();
+        $totalPosts = $totalPosts->fetch()['total'];
+
+        return ceil($totalPosts / $postPag);
+    }
+
+// Compruebo la session:
+
+    function comprobarSession() {
+        if (!isset($_SESSION['admin'])) {
+            header('Location: '.RUTA);
+        }
+    }
+
 ?>
